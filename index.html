@@ -10,21 +10,22 @@
       theme: {
         extend: {
           colors: {
-            gold: '#D4AF37',
-            'gold-hover': '#f0c850',
-            whatsapp: '#25D366'
+            gold: '#d49a3d',
+            'gold-hover': '#e5ab4e',
+            whatsapp: '#22c55e'
           },
           fontFamily: {
             display: ['Playfair Display', 'serif'],
+            heading: ['Oswald', 'sans-serif'],
             sans: ['Manrope', 'sans-serif']
           }
         }
       }
     }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { background-color: #141210; color: #f5f3ef; font-family: 'Manrope', sans-serif; }
+    body { background-color: #12100e; color: #eae7e1; font-family: 'Manrope', sans-serif; }
     #mobile-sheet { right: -300px; transition: right 0.3s ease; }
     #mobile-sheet.open { right: 0 !important; }
     #mobile-overlay.open { display: block !important; }
@@ -44,24 +45,24 @@
   <meta property="og:url" content="https://espaco-elite-barbearia.vercel.app/">
   <meta property="og:type" content="website">
 </head>
-<body class="bg-[#141210] text-[#f5f3ef] min-h-screen">
+<body class="bg-[#12100e] text-[#eae7e1] min-h-screen">
 
-  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#141210]/85 border-b border-white/10">
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#12100e]/85 border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
       <a href="#inicio" class="flex flex-col leading-none">
         <span class="font-display text-2xl md:text-3xl font-black tracking-tight text-white">Espaço <span class="text-gold">Elite</span></span>
         <span class="text-xs tracking-[0.4em] uppercase text-zinc-400 font-bold mt-1">Barbearia</span>
       </a>
       <nav class="hidden md:flex items-center gap-9">
-        <a href="#inicio" class="text-sm text-zinc-300 hover:text-gold transition-colors">Início</a>
-        <a href="#sobre" class="text-sm text-zinc-300 hover:text-gold transition-colors">Sobre</a>
-        <a href="#servicos" class="text-sm text-zinc-300 hover:text-gold transition-colors">Serviços</a>
-        <a href="#produtos" class="text-sm text-zinc-300 hover:text-gold transition-colors">Produtos</a>
-        <a href="#galeria" class="text-sm text-zinc-300 hover:text-gold transition-colors">Galeria</a>
-        <a href="#local" class="text-sm text-zinc-300 hover:text-gold transition-colors">Local</a>
-        <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gold text-black text-sm font-bold px-5 py-2.5 rounded hover:bg-gold-hover transition-all">Agendar</a>
+        <a href="#inicio" class="text-sm text-zinc-300 hover:text-gold transition-colors uppercase tracking-wider text-xs font-semibold">Início</a>
+        <a href="#sobre" class="text-sm text-zinc-300 hover:text-gold transition-colors uppercase tracking-wider text-xs font-semibold">Sobre</a>
+        <a href="#servicos" class="text-sm text-zinc-300 hover:text-gold transition-colors uppercase tracking-wider text-xs font-semibold">Preços</a>
+        <a href="#galeria" class="text-sm text-zinc-300 hover:text-gold transition-colors uppercase tracking-wider text-xs font-semibold">Galeria</a>
+        <a href="#produtos" class="text-sm text-zinc-300 hover:text-gold transition-colors uppercase tracking-wider text-xs font-semibold">Produtos</a>
+        <a href="#local" class="text-sm text-zinc-300 hover:text-gold transition-colors uppercase tracking-wider text-xs font-semibold">Contato</a>
+        <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gold text-black text-xs font-bold px-5 py-2.5 rounded hover:bg-gold-hover transition-all uppercase tracking-wider">Agendar</a>
       </nav>
-      <button type="button" onclick="document.getElementById('mobile-sheet').classList.add('open'); document.getElementById('mobile-overlay').classList.add('open'); document.body.style.overflow='';" class="md:hidden flex items-center gap-1.5 p-2 rounded-md bg-[#1f1b18] text-gold border border-gold/30 font-semibold text-xs focus:outline-none">
+      <button type="button" onclick="document.getElementById('mobile-sheet').classList.add('open'); document.getElementById('mobile-overlay').classList.add('open'); document.body.style.overflow='';" class="md:hidden flex items-center gap-1.5 p-2 rounded-md bg-[#1c1916] text-gold border border-gold/30 font-semibold text-xs focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg>
         <span>Menu</span>
       </button>
@@ -78,10 +79,10 @@
       <nav class="flex flex-col gap-4 mt-6">
         <a href="#inicio" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Início</a>
         <a href="#sobre" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Sobre</a>
-        <a href="#servicos" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Serviços</a>
-        <a href="#produtos" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Produtos</a>
+        <a href="#servicos" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Preços</a>
         <a href="#galeria" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Galeria</a>
-        <a href="#local" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Local</a>
+        <a href="#produtos" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Produtos</a>
+        <a href="#local" onclick="document.getElementById('mobile-sheet').classList.remove('open'); document.getElementById('mobile-overlay').classList.remove('open'); document.body.style.overflow='';" class="text-zinc-300 font-semibold hover:text-gold transition-colors py-1">Contato</a>
       </nav>
     </div>
     <div class="border-t border-zinc-800 pt-4">
@@ -93,23 +94,23 @@
     <section id="inicio" class="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0">
         <img alt="Barbearia Espaço Elite" class="w-full h-full object-cover scale-105 transform duration-1000" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#141210] via-[#141210]/90 to-[#141210]/40"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#141210] via-transparent to-[#141210]/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#12100e] via-[#12100e]/90 to-[#12100e]/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#12100e] via-transparent to-[#12100e]/60"></div>
       </div>
       <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-28 pb-16">
         <div class="max-w-2xl animate-fade-up">
-          <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full mb-6">
+          <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 px-3.5 py-1.5 rounded-full mb-6">
             <span class="text-xs tracking-[0.2em] uppercase text-gold font-bold">★ 5.0 · Barra do Piraí — RJ</span>
           </div>
-          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight text-white mb-6">
-            Tradição, estilo e <span class="text-gold italic">navalha na régua.</span>
+          <h1 class="font-heading uppercase text-5xl sm:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-white mb-6">
+            Tradição, estilo e <span class="text-gold">navalha na régua.</span>
           </h1>
           <p class="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-xl mb-10">
             Na Espaço Elite Barbearia resgatamos a tradição da barbearia clássica com um atendimento diferenciado. Corte, barba na toalha quente e todo o cuidado com o seu visual.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gold text-black font-bold px-8 py-4 rounded hover:bg-gold-hover transition-all shadow-xl shadow-gold/20">Agendar pelo AppBarber</a>
-            <a href="https://wa.me/5524998693574?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Espa%C3%A7o%20Elite%20Barbearia." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-transparent text-gold font-bold px-8 py-4 rounded border border-gold hover:bg-gold/10 transition-all">Falar no WhatsApp</a>
+            <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gold text-black font-bold px-8 py-4 rounded hover:bg-gold-hover transition-all shadow-xl shadow-gold/20 uppercase tracking-wider text-xs">Agendar Horário</a>
+            <a href="https://wa.me/5524998693574?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Espa%C3%A7o%20Elite%20Barbearia." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-transparent text-gold font-bold px-8 py-4 rounded border border-gold hover:bg-gold/10 transition-all uppercase tracking-wider text-xs">Falar no WhatsApp</a>
           </div>
         </div>
       </div>
@@ -118,245 +119,247 @@
       </div>
     </section>
 
-    <section id="sobre" class="py-24 md:py-32 relative bg-[#141210]">
+    <section id="sobre" class="py-24 md:py-32 relative bg-[#12100e]">
       <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="relative">
-          <div class="aspect-[4/5] overflow-hidden rounded-lg border border-white/10 shadow-2xl">
-            <img alt="Interior da barbearia" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="pexels-photo-3037244.jpg">
+          <div class="aspect-[4/5] overflow-hidden rounded-xl border border-white/10 shadow-2xl relative">
+            <img alt="Barbeiro Ualace em atendimento" class="w-full h-full object-cover brightness-90 contrast-105" src="pexels-photo-3037244.jpg">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
-          <div class="absolute -bottom-6 -right-6 bg-gold text-black px-8 py-6 rounded shadow-xl hidden sm:block">
-            <p class="font-display text-4xl font-black leading-none">+6</p>
-            <p class="text-xs uppercase tracking-widest font-bold mt-1">Anos de tradição</p>
+          <div class="absolute -bottom-6 -left-6 bg-[#1a1714] border border-gold/30 text-white px-8 py-6 rounded-xl shadow-2xl hidden sm:block">
+            <p class="font-heading text-4xl font-bold leading-none text-gold">+6</p>
+            <p class="text-[11px] uppercase tracking-widest font-semibold text-zinc-400 mt-1">Anos de tradição</p>
           </div>
         </div>
         <div>
-          <span class="uppercase text-xs tracking-[0.2em] font-bold text-gold mb-4 block">Sobre nós</span>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-            Comandada pelo barbeiro <span class="text-gold italic">Ualace</span>
+          <span class="uppercase text-xs tracking-[0.25em] font-semibold text-gold mb-3 block">Sobre nós</span>
+          <h2 class="font-heading uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6">
+            Comandada pelo<br>barbeiro <span class="text-gold">Ualace</span>
           </h2>
-          <p class="text-zinc-400 leading-relaxed mb-4">
-            A Espaço Elite Barbearia oferece aos seus clientes um atendimento diferenciado em matéria de cuidados com o visual, buscando resgatar a tradição da barbearia clássica. Aqui cada corte é feito com técnica, precisão e a atenção que você merece.
+          <p class="text-zinc-400 leading-relaxed mb-4 text-sm sm:text-base">
+            A Espaço Elite Barbearia oferece aos seus clientes um atendimento diferenciado em matéria de cuidados com o visual, buscando resgatar a tradição da barbearia clássica. Cada corte é feito com técnica, precisão e a atenção que você merece.
           </p>
-          <p class="text-zinc-400 leading-relaxed mb-10">
+          <p class="text-zinc-400 leading-relaxed mb-8 text-sm sm:text-base">
             Ambiente acolhedor no coração de Barra do Piraí, com toda a estrutura para você relaxar enquanto cuidamos do seu estilo.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div class="flex items-center gap-3 border border-gold/30 p-3 rounded bg-[#1f1b18]">
-              <span class="text-gold flex items-center justify-center w-9 h-9 border border-gold/40 rounded shrink-0 bg-[#141210]">
+            <div class="flex items-center gap-3 border border-white/5 p-3 rounded-lg bg-[#181512]">
+              <span class="text-gold flex items-center justify-center w-8 h-8 rounded shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>
               </span>
-              <span class="text-sm font-medium text-zinc-200">Wi-fi</span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-zinc-300">Wi-fi</span>
             </div>
-            <div class="flex items-center gap-3 border border-gold/30 p-3 rounded bg-[#1f1b18]">
-              <span class="text-gold flex items-center justify-center w-9 h-9 border border-gold/40 rounded shrink-0 bg-[#141210]">
+            <div class="flex items-center gap-3 border border-white/5 p-3 rounded-lg bg-[#181512]">
+              <span class="text-gold flex items-center justify-center w-8 h-8 rounded shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="4" r="1"></circle><path d="m18 19 1-7-6 1"></path><path d="m5 8 3-3 5.5 3-2.36 3.5"></path><path d="M4.24 14.5a5 5 0 0 0 6.88 6"></path><path d="M13.76 17.5a5 5 0 0 0-6.88-6"></path></svg>
               </span>
-              <span class="text-sm font-medium text-zinc-200">Acessibilidade</span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-zinc-300">Acessibilidade</span>
             </div>
-            <div class="flex items-center gap-3 border border-gold/30 p-3 rounded bg-[#1f1b18]">
-              <span class="text-gold flex items-center justify-center w-9 h-9 border border-gold/40 rounded shrink-0 bg-[#141210]">
+            <div class="flex items-center gap-3 border border-white/5 p-3 rounded-lg bg-[#181512]">
+              <span class="text-gold flex items-center justify-center w-8 h-8 rounded shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path><path d="M15 12h.01"></path><path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path><path d="M9 12h.01"></path></svg>
               </span>
-              <span class="text-sm font-medium text-zinc-200">Crianças</span>
+              <span class="text-xs font-semibold uppercase tracking-wider text-zinc-300">Crianças</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="servicos" class="py-24 md:py-32 bg-[#1a1714] relative border-y border-white/5">
+    <section id="servicos" class="py-24 md:py-32 bg-[#161311] relative border-y border-white/5">
       <div class="max-w-4xl mx-auto px-6 md:px-12">
         <div class="text-center mb-16">
-          <h2 class="font-display text-4xl sm:text-5xl font-bold text-white">Tabela de preços</h2>
+          <span class="uppercase text-xs tracking-[0.25em] font-semibold text-gold mb-3 block">Valores</span>
+          <h2 class="font-heading uppercase text-4xl sm:text-5xl font-bold text-white tracking-wide">Tabela de Preços</h2>
         </div>
-        <div class="flex flex-col divide-y divide-white/10">
+        <div class="flex flex-col divide-y divide-white/5">
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Corte</h3>
-                <span class="text-xs text-zinc-400">40 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Corte</h3>
+                <span class="text-xs text-zinc-500">40 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Corte de cabelo + lavagem + finalização com penteado.</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 40</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 40</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Barba</h3>
-                <span class="text-xs text-zinc-400">40 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Barba</h3>
+                <span class="text-xs text-zinc-500">40 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Técnica tradicional com toalha quente e remoção na navalha.</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 40</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 40</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Geral (Corte e Barba)</h3>
-                <span class="text-xs text-zinc-400">80 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Geral (Corte e Barba)</h3>
+                <span class="text-xs text-zinc-500">80 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Corte com lavagem e finalização + barba com toalha quente.</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 70</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 70</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Corte Feminino</h3>
-                <span class="text-xs text-zinc-400">80 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Corte Feminino</h3>
+                <span class="text-xs text-zinc-500">80 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Corte + lavagem + finalização (somente às terças-feiras).</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 70</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 70</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Tonalização de Fios Brancos</h3>
-                <span class="text-xs text-zinc-400">30 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Tonalização de Fios Brancos</h3>
+                <span class="text-xs text-zinc-500">30 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Produto tonalizante de efeito rápido para cabelo ou barba.</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 35</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 35</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Estilo livre</h3>
-                <span class="text-xs text-zinc-400">10 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Estilo livre</h3>
+                <span class="text-xs text-zinc-500">10 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Detalhe artístico com a navalha (a partir de).</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 10</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 10</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Sobrancelha (navalha)</h3>
-                <span class="text-xs text-zinc-400">10 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Sobrancelha (navalha)</h3>
+                <span class="text-xs text-zinc-500">10 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Remoção dos pelos excessivos com a navalha.</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 10</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 10</span>
           </div>
           <div class="py-6 flex items-center justify-between group cursor-pointer">
             <div>
               <div class="flex items-baseline gap-3">
-                <h3 class="font-display text-lg sm:text-xl font-bold text-white group-hover:text-gold transition-colors">Depilação Nasal / Auricular</h3>
-                <span class="text-xs text-zinc-400">10 minutos</span>
+                <h3 class="font-heading text-lg sm:text-xl font-bold uppercase text-white group-hover:text-gold transition-colors tracking-wide">Depilação Nasal / Auricular</h3>
+                <span class="text-xs text-zinc-500">10 minutos</span>
               </div>
               <p class="text-sm text-zinc-400 mt-1">Remoção dos pelos com cera especial aquecida.</p>
             </div>
-            <span class="font-display text-xl sm:text-2xl font-black text-gold">R$ 10</span>
+            <span class="font-heading text-xl sm:text-2xl font-bold text-gold">R$ 10</span>
           </div>
         </div>
         <div class="mt-14 text-center">
-          <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-gold text-black font-bold px-10 py-4 rounded hover:bg-gold-hover transition-all shadow-xl shadow-gold/10">Reservar meu horário</a>
+          <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-gold text-black font-bold px-10 py-4 rounded hover:bg-gold-hover transition-all shadow-xl shadow-gold/10 uppercase tracking-wider text-xs">Reservar meu horário</a>
         </div>
       </div>
     </section>
 
-    <section id="galeria" class="py-24 md:py-32 bg-[#141210]">
+    <section id="galeria" class="py-24 md:py-32 bg-[#12100e]">
       <div class="max-w-7xl mx-auto px-6 md:px-12">
         <div class="mb-14 max-w-xl">
-          <span class="uppercase text-xs tracking-[0.2em] font-bold text-gold mb-4 block">Galeria</span>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Nossos trabalhos</h2>
-          <p class="mt-4 text-zinc-400">Um pouco do que fazemos por aqui. Estilo, precisão e acabamento.</p>
+          <span class="uppercase text-xs tracking-[0.25em] font-semibold text-gold mb-3 block">Galeria</span>
+          <h2 class="font-heading uppercase text-4xl sm:text-5xl font-bold text-white tracking-wide">Nossos Trabalhos</h2>
+          <p class="mt-4 text-zinc-400 text-sm">Um pouco do que fazemos por aqui. Estilo, precisão e acabamento.</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          <div class="overflow-hidden border border-white/10 rounded-lg col-span-2 row-span-2">
+          <div class="overflow-hidden border border-white/5 rounded-xl col-span-2 row-span-2">
             <img alt="Trabalho 1" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700" src="pexels-photo-2076930.jpg">
           </div>
-          <div class="overflow-hidden border border-white/10 rounded-lg">
+          <div class="overflow-hidden border border-white/5 rounded-xl">
             <img alt="Trabalho 2" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700" src="pexels-photo-4.jpg">
           </div>
-          <div class="overflow-hidden border border-white/10 rounded-lg">
+          <div class="overflow-hidden border border-white/5 rounded-xl">
             <img alt="Trabalho 3" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700" src="pexels-photo-3.jpg">
           </div>
-          <div class="overflow-hidden border border-white/10 rounded-lg">
+          <div class="overflow-hidden border border-white/5 rounded-xl">
             <img alt="Trabalho 4" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700" src="pexels-photo-2.jpg">
           </div>
-          <div class="overflow-hidden border border-white/10 rounded-lg">
+          <div class="overflow-hidden border border-white/5 rounded-xl">
             <img alt="Trabalho 5" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700" src="pexels-photo-5.jpg">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="produtos" class="py-24 md:py-32 bg-[#1a1714] border-y border-white/5">
+    <section id="produtos" class="py-24 md:py-32 bg-[#161311] border-y border-white/5">
       <div class="max-w-7xl mx-auto px-6 md:px-12">
         <div class="mb-14 text-center max-w-xl mx-auto">
-          <span class="uppercase text-xs tracking-[0.2em] font-bold text-gold mb-4 block">Manutenção e Estilo</span>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Linha de Cuidados</h2>
+          <span class="uppercase text-xs tracking-[0.25em] font-semibold text-gold mb-3 block">Manutenção e Estilo</span>
+          <h2 class="font-heading uppercase text-4xl sm:text-5xl font-bold text-white tracking-wide">Linha de Cuidados</h2>
           <p class="mt-4 text-zinc-400 text-sm">Produtos selecionados para manter o seu visual impecável em casa.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="border border-white/10 p-6 bg-[#1f1b18] rounded-lg flex flex-col justify-between group hover:border-gold/50 transition-all">
+          <div class="border border-white/5 p-6 bg-[#1a1714] rounded-xl flex flex-col justify-between group hover:border-gold/40 transition-all">
             <div>
-              <h3 class="font-display text-lg font-bold text-white group-hover:text-gold transition-colors">Balm para barba</h3>
-              <p class="text-zinc-400 text-xs mt-2">Hidratação e controle dos fios rebeldes.</p>
+              <h3 class="font-heading uppercase text-lg font-bold text-white group-hover:text-gold transition-colors tracking-wide">Balm para barba</h3>
+              <p class="text-zinc-400 text-xs mt-2 leading-relaxed">Hidratação e controle dos fios rebeldes.</p>
             </div>
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-              <span class="text-xs uppercase tracking-wider text-zinc-400">Disponível</span>
-              <span class="font-display text-lg font-black text-gold">R$ 35,00</span>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 bg-white/5 px-2 py-1 rounded">Disponível</span>
+              <span class="font-heading text-lg font-bold text-gold">R$ 35,00</span>
             </div>
           </div>
-          <div class="border border-white/10 p-6 bg-[#1f1b18] rounded-lg flex flex-col justify-between group hover:border-gold/50 transition-all">
+          <div class="border border-white/5 p-6 bg-[#1a1714] rounded-xl flex flex-col justify-between group hover:border-gold/40 transition-all">
             <div>
-              <h3 class="font-display text-lg font-bold text-white group-hover:text-gold transition-colors">Óleo de barba</h3>
-              <p class="text-zinc-400 text-xs mt-2">Brilho natural e maciez profunda para a barba.</p>
+              <h3 class="font-heading uppercase text-lg font-bold text-white group-hover:text-gold transition-colors tracking-wide">Óleo de barba</h3>
+              <p class="text-zinc-400 text-xs mt-2 leading-relaxed">Brilho natural e maciez profunda para a barba.</p>
             </div>
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-              <span class="text-xs uppercase tracking-wider text-zinc-400">Disponível</span>
-              <span class="font-display text-lg font-black text-gold">R$ 35,00</span>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 bg-white/5 px-2 py-1 rounded">Disponível</span>
+              <span class="font-heading text-lg font-bold text-gold">R$ 35,00</span>
             </div>
           </div>
-          <div class="border border-white/10 p-6 bg-[#1f1b18] rounded-lg flex flex-col justify-between group hover:border-gold/50 transition-all">
+          <div class="border border-white/5 p-6 bg-[#1a1714] rounded-xl flex flex-col justify-between group hover:border-gold/40 transition-all">
             <div>
-              <h3 class="font-display text-lg font-bold text-white group-hover:text-gold transition-colors">Pomada</h3>
-              <p class="text-zinc-400 text-xs mt-2">Fixação duradoura com efeito fosco/matte.</p>
+              <h3 class="font-heading uppercase text-lg font-bold text-white group-hover:text-gold transition-colors tracking-wide">Pomada</h3>
+              <p class="text-zinc-400 text-xs mt-2 leading-relaxed">Fixação duradoura com efeito fosco/matte.</p>
             </div>
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-              <span class="text-xs uppercase tracking-wider text-zinc-400">Disponível</span>
-              <span class="font-display text-lg font-black text-gold">R$ 20,00</span>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 bg-white/5 px-2 py-1 rounded">Disponível</span>
+              <span class="font-heading text-lg font-bold text-gold">R$ 20,00</span>
             </div>
           </div>
-          <div class="border border-white/10 p-6 bg-[#1f1b18] rounded-lg flex flex-col justify-between group hover:border-gold/50 transition-all">
+          <div class="border border-white/5 p-6 bg-[#1a1714] rounded-xl flex flex-col justify-between group hover:border-gold/40 transition-all">
             <div>
-              <h3 class="font-display text-lg font-bold text-white group-hover:text-gold transition-colors">Xampu</h3>
-              <p class="text-zinc-400 text-xs mt-2">Limpeza profunda para cabelos e barba.</p>
+              <h3 class="font-heading uppercase text-lg font-bold text-white group-hover:text-gold transition-colors tracking-wide">Xampu</h3>
+              <p class="text-zinc-400 text-xs mt-2 leading-relaxed">Limpeza profunda para cabelos e barba.</p>
             </div>
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-              <span class="text-xs uppercase tracking-wider text-zinc-400">Disponível</span>
-              <span class="font-display text-lg font-black text-gold">R$ 35,00</span>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 bg-white/5 px-2 py-1 rounded">Disponível</span>
+              <span class="font-heading text-lg font-bold text-gold">R$ 35,00</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="local" class="py-24 md:py-32 bg-[#141210]">
+    <section id="local" class="py-24 md:py-32 bg-[#12100e]">
       <div class="max-w-7xl mx-auto px-6 md:px-12">
         <div class="mb-14">
-          <span class="uppercase text-xs tracking-[0.2em] font-bold text-gold mb-4 block">Onde estamos</span>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Horário e Localização</h2>
+          <span class="uppercase text-xs tracking-[0.25em] font-semibold text-gold mb-3 block">Onde estamos</span>
+          <h2 class="font-heading uppercase text-4xl sm:text-5xl font-bold text-white tracking-wide">Horário e Localização</h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div class="space-y-8">
-            <div class="border border-white/10 p-8 bg-[#1f1b18] rounded-lg">
-              <h3 class="font-display text-xl font-bold text-white mb-6">Funcionamento</h3>
+            <div class="border border-white/5 p-8 bg-[#181512] rounded-xl">
+              <h3 class="font-heading uppercase text-xl font-bold text-white mb-6 tracking-wide">Funcionamento</h3>
               <ul id="tabela-horarios" class="space-y-3 text-sm text-zinc-300">
-                <li data-dia="1" class="flex justify-between border-b border-white/10 pb-3"><span>Segunda-feira</span><span class="text-zinc-500 time-val">Fechado</span></li>
-                <li data-dia="2" class="flex justify-between border-b border-white/10 pb-3"><span>Terça-feira</span><span class="time-val">09:30 — 18:40</span></li>
-                <li data-dia="3" class="flex justify-between border-b border-white/10 pb-3"><span>Quarta-feira</span><span class="time-val">09:30 — 18:40</span></li>
-                <li data-dia="4" class="flex justify-between border-b border-white/10 pb-3"><span>Quinta-feira</span><span class="time-val">09:30 — 18:40</span></li>
-                <li data-dia="5" class="flex justify-between border-b border-white/10 pb-3"><span>Sexta-feira</span><span class="time-val">09:30 — 18:40</span></li>
-                <li data-dia="6" class="flex justify-between border-b border-white/10 pb-3"><span>Sábado</span><span class="time-val">09:30 — 18:40</span></li>
-                <li data-dia="0" class="flex justify-between border-b border-white/10 pb-3"><span>Domingo</span><span class="text-zinc-500 time-val">Fechado</span></li>
+                <li data-dia="1" class="flex justify-between border-b border-white/5 pb-3"><span>Segunda-feira</span><span class="text-zinc-500 time-val">Fechado</span></li>
+                <li data-dia="2" class="flex justify-between border-b border-white/5 pb-3"><span>Terça-feira</span><span class="time-val">09:30 — 18:40</span></li>
+                <li data-dia="3" class="flex justify-between border-b border-white/5 pb-3"><span>Quarta-feira</span><span class="time-val">09:30 — 18:40</span></li>
+                <li data-dia="4" class="flex justify-between border-b border-white/5 pb-3"><span>Quinta-feira</span><span class="time-val">09:30 — 18:40</span></li>
+                <li data-dia="5" class="flex justify-between border-b border-white/5 pb-3"><span>Sexta-feira</span><span class="time-val">09:30 — 18:40</span></li>
+                <li data-dia="6" class="flex justify-between border-b border-white/5 pb-3"><span>Sábado</span><span class="time-val">09:30 — 18:40</span></li>
+                <li data-dia="0" class="flex justify-between border-b border-white/5 pb-3"><span>Domingo</span><span class="text-zinc-500 time-val">Fechado</span></li>
               </ul>
             </div>
-            <div class="border border-white/10 p-8 bg-[#1f1b18] rounded-lg space-y-5">
+            <div class="border border-white/5 p-8 bg-[#181512] rounded-xl space-y-5">
               <div class="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold shrink-0 mt-1"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 <p class="text-zinc-300 text-sm leading-relaxed">Rua Paulo de Frontin, 148 — Bloco C, Sala 9 — Centro, Barra do Piraí/RJ</p>
@@ -365,12 +368,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold shrink-0"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
                 <span class="text-zinc-300 text-sm">(24) 99869-3574</span>
               </div>
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Paulo+de+Frontin+148+Barra+do+Pira%C3%AD+RJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold text-sm font-bold hover:gap-3 transition-all">
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Paulo+de+Frontin+148+Barra+do+Pira%C3%AD+RJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-wider hover:gap-3 transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>Como chegar
               </a>
             </div>
           </div>
-          <div class="min-h-[400px] border border-white/10 rounded-lg overflow-hidden">
+          <div class="min-h-[400px] border border-white/5 rounded-xl overflow-hidden">
             <iframe title="Localização Espaço Elite Barbearia" src="https://www.google.com/maps?q=Rua+Paulo+de+Frontin+148+Barra+do+Pira%C3%AD+RJ&amp;output=embed" class="w-full h-full min-h-[400px]" loading="lazy"></iframe>
           </div>
         </div>
@@ -378,7 +381,7 @@
     </section>
   </main>
 
-  <footer id="contato" class="border-t border-white/10 pt-20 pb-10 bg-[#0f0d0c]">
+  <footer id="contato" class="border-t border-white/5 pt-20 pb-10 bg-[#0d0b0a]">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
@@ -386,7 +389,7 @@
           <p class="mt-4 text-zinc-400 text-sm leading-relaxed max-w-xs">Barbearia clássica em Barra do Piraí. Tradição, estilo e cuidado com o seu visual.</p>
         </div>
         <div>
-          <h4 class="text-xs uppercase tracking-[0.2em] text-gold font-bold mb-5">Agende agora</h4>
+          <h4 class="text-xs uppercase tracking-[0.25em] text-gold font-bold mb-5">Agende agora</h4>
           <div class="flex flex-col gap-3">
             <a href="https://sites.appbarber.com.br/espacoelitebarb-iaxr" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-zinc-300 hover:text-gold transition-colors text-sm">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>Agendar pelo AppBarber
@@ -400,7 +403,7 @@
           </div>
         </div>
         <div>
-          <h4 class="text-xs uppercase tracking-[0.2em] text-gold font-bold mb-5">Endereço</h4>
+          <h4 class="text-xs uppercase tracking-[0.25em] text-gold font-bold mb-5">Endereço</h4>
           <div class="flex items-start gap-2 text-zinc-400 text-sm leading-relaxed">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 mt-0.5 text-gold"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
             <span>Rua Paulo de Frontin, 148 — Bloco C, Sala 9 — Centro, Barra do Piraí/RJ</span>
@@ -414,7 +417,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5524998693574?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Espa%C3%A7o%20Elite%20Barbearia." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-whatsapp text-white p-4 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" aria-label="Agendar pelo WhatsApp">
+  <a href="https://wa.me/5524998693574?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Espa%C3%A7o%20Elite%20Barbearia." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-whatsapp text-white p-4 rounded-full shadow-[0_8px_30px_rgba(34,197,94,0.4)] flex items-center justify-center hover:scale-110 transition-transform cursor-pointer" aria-label="Agendar pelo WhatsApp">
     <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.892c0 2.096.549 4.14 1.595 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.582 0 11.941-5.334 11.944-11.892a11.821 11.821 0 00-3.417-8.401"></path></svg>
   </a>
 
@@ -425,11 +428,11 @@
       
       linhas.forEach(li => {
         if (li.getAttribute("data-dia") == hoje) {
-          li.className = "flex justify-between items-center border-b border-white/10 pb-3 text-gold font-semibold";
+          li.className = "flex justify-between items-center border-b border-white/5 pb-3 text-gold font-semibold";
           const spanDia = li.querySelector("span");
           const spanHorario = li.querySelector(".time-val");
           
-          spanDia.innerHTML = spanDia.textContent + ' <span class="bg-gold text-black text-[10px] uppercase tracking-wider px-2 py-0.5 ml-2 rounded">Hoje</span>';
+          spanDia.innerHTML = spanDia.textContent + ' <span class="bg-gold text-black text-[10px] uppercase tracking-wider px-2 py-0.5 ml-2 rounded font-bold">Hoje</span>';
           spanHorario.className = "text-gold";
         }
       });
